@@ -1,0 +1,36 @@
+.Profile {
+    position: relative;
+    display: grid;
+    grid-template-columns: 18rem auto 20rem;
+    gap: 1rem;
+}
+
+.Profile-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mobileResponsive {
+    display: none;
+}
+
+@media (max-width: 1187px) {
+    .Profile {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Profile {
+        display: none;
+    }
+
+    .mobileResponsive {
+        display: block;
+        color: coral;
+    }
+}
